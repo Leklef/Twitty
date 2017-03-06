@@ -74,7 +74,6 @@ class LogInViewController: UIViewController {
         TwitterClient.sharedInstance?.login(success: { 
             print("Logged In")
             self.dismiss(animated: true, completion: { 
-        
             })
         }, failure: { (error) in
             print(error)

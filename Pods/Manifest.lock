@@ -14,17 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - Alamofire (4.3.0)
   - BDBOAuth1Manager (2.0.0):
     - AFNetworking/NSURLSession (~> 3.0.0)
+  - FaveButton (2.0.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire (~> 4.3)
   - BDBOAuth1Manager
+  - FaveButton (~> 2.0.3)
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   BDBOAuth1Manager: 92d17d06f8a648602962304cd2f35ae7394fa001
+  FaveButton: cfcbc5e73da159c4f916613da5687357b5bb4783
 
-PODFILE CHECKSUM: 1f18c37d6c2de01d79ef91d19a01430f083f3458
+PODFILE CHECKSUM: 5bd4f6fde24c41f3f0f1878423f1a63fdaf0bc0f
 
 COCOAPODS: 1.1.1

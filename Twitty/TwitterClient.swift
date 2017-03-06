@@ -74,6 +74,19 @@ class TwitterClient: BDBOAuth1SessionManager {
         }
     }
     
+    //Get the home timeline of the current user
+    func homeTimeline(success: @escaping ([Tweet]) -> (), failure: @escaping (NSError) -> ()){
+        let params = ["count":10]
+        get("1.1/statuses/home_timeline.json", parameters: params, progress: nil, success: { (task, response) in
+            let dictionaries = response as! [NSDictionary]
+            let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
+            success(tweets)
+        }) { (task, error) in
+            print("error: \(error)")
+            failure(error as NSError)
+        }
+    }
+    
     //logout
     func logout() {
         User.currentUser = nil
